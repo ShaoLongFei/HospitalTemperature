@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="full_screen_dialog" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>

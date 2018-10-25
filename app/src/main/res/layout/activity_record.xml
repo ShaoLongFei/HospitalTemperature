@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/mainBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:background="@color/mainBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:onClick="onViewClicked"
+            android:id="@+id/iv_back"
+            android:src="@drawable/back_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/white"/>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="2018-6-28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_date"/>
+        <ImageView
+            android:onClick="onViewClicked"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_date"
+            android:src="@drawable/clock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:tint="@color/white"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#03868484"/>
+
+    <TextView
+        android:id="@+id/tv_noData"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="暂无数据"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/rv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

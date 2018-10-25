@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    tools:context=".activity.LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_head">
+
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_icon" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="医院病房环境监测"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_head"
+        android:layout_marginTop="47dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/radius_drawable_bg"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:id="@+id/input_layout"
+            >
+
+            <LinearLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paw_code" />
+
+                <com.liuyue.hospitaltemperature.view.EditTextWithClear
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="账号"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:id="@+id/etUsername"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/id_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/input_layout_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paw_left" />
+
+                <com.liuyue.hospitaltemperature.view.PasswordEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:id="@+id/etPassword"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btLogin"
+            android:layout_width="141dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/input_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/select_login_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="106dp"
+        android:layout_height="249dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp"
+        android:src="@drawable/person_login"/>
+
+
+
+</RelativeLayout>

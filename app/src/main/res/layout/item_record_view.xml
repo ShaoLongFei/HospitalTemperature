@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="15dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/item_record_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:padding="5dp"
+
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="危情预警:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_state"
+            android:src="@drawable/up_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_marginLeft="5dp"
+            android:text="10℃"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="16:22:88"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="房间位置:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_location"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="高新区 瑞麟轩"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
